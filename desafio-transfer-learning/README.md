@@ -26,7 +26,8 @@ O desafio consiste em aplicar a técnica de **Transfer Learning** para construir
 ---
 
 ## 📂 Estrutura do Projeto
-desafio-transfer-learning/ ├── desafio_transfer_learning.py       # Código principal do classificador ├── modelo_transfer.h5                 # Modelo treinado salvo ├── loki.jpeg                          # Imagem de teste ├── README.md 
+desafio-transfer-learning/ ├── desafio_transfer_learning.py   # Código principal do classificador ├── modelo_transfer.h5             # Modelo treinado salvo ├── loki.jpeg                      # Imagem de teste ├── README.md                      # Documentação do desafi
+
 
 
 ---
