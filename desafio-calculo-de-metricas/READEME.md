@@ -1,15 +1,15 @@
-#​📊 Desafio: Análise de Métricas de Classificação
+#​ 📊 Desafio: Análise de Métricas de Classificação
 
 ​Este projeto é parte do meu repositório desafios-bairesdev e foca na prática de avaliação de modelos de Machine Learning. O objetivo foi aplicar conceitos de métricas de classificação para analisar o desempenho de um modelo em um problema real na área da saúde.
 ---
 
-​##🧬 O Problema
+​## 🧬 O Problema
 
 ​O desafio consiste em criar um modelo de classificação binária para prever a presença de câncer de mama com base em características de células mamárias. O dataset utilizado é o Breast Cancer Wisconsin, que contém dados sobre tumores classificados como benignos ou malignos.
 
 ---
 
-##​💻 Tecnologias Utilizadas
+## ​💻 Tecnologias Utilizadas
 
 ​Python: Linguagem de programação principal.
 ​Scikit-learn: Para carregamento do dataset (load_breast_cancer), divisão dos dados (train_test_split) e treinamento do modelo (LogisticRegression).
@@ -18,7 +18,7 @@
 
 ---
 
-##​🔬 Métricas de Avaliação
+##​ 🔬 Métricas de Avaliação
 
 ​O ponto central deste desafio foi a implementação e análise manual de métricas de avaliação, focando em entender o significado de cada uma no contexto do problema:
 ​Matriz de Confusão: A tabela que resume o desempenho do modelo, mostrando a contagem de Verdadeiros Positivos, Verdadeiros Negativos, Falsos Positivos e Falsos Negativos.
@@ -29,7 +29,7 @@
 
 ---
 
-##​⚙️ Como Rodar o Código
+##​ ⚙️ Como Rodar o Código
 
 ​Clone este repositório para sua máquina.
 ​Abra o arquivo .py em um ambiente de desenvolvimento Python.
@@ -37,7 +37,7 @@
 ​Execute o script para ver os resultados da avaliação do modelo.
 
 ---
-​##✅ Resultados
+​## ✅ Resultados
 
 ​Os resultados do modelo de Regressão Logística demonstraram uma alta eficácia, especialmente na Revocação, o que indica uma baixa taxa de Falsos Negativos. Isso torna o modelo promissor para uso em um contexto de triagem, onde a capacidade de identificar todos os casos positivos é de extrema importância.
 
