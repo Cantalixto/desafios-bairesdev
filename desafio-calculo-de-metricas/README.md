@@ -1,48 +1,78 @@
-# 📊 Desafio: Análise de Métricas de Classificação
+# 📊 Desafio: Cálculo de Métricas de Classificação
 
-Este projeto é parte do meu repositório **desafios-bairesdev** e foca na prática de avaliação de modelos de Machine Learning.  
-O objetivo foi aplicar conceitos de métricas de classificação para analisar o desempenho de um modelo em um problema real na área da saúde.
-
----
-
-## 🧬 O Problema
-
-O desafio consiste em criar um modelo de classificação binária para prever a presença de câncer de mama com base em características de células mamárias.  
-O dataset utilizado é o **Breast Cancer Wisconsin**, que contém dados sobre tumores classificados como benignos ou malignos.
+Este desafio integra o bootcamp da BairesDev  DIO.me e tem como objetivo aplicar métricas de avaliação em modelos de classificação supervisionada sem o uso de bibliotecas externas. Todas as métricas foram implementadas utilizando funções puras em Python, reforçando o entendimento dos conceitos por trás de cada cálculo. 
+Utilizamos um conjunto de dados da área da saúde para prever diagnósticos com base em variáveis clínicas, explorando a performance de um modelo de **Regressão Logística**.
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## 🎯 Objetivo
 
-- **Python**: Linguagem de programação principal  
-- **Scikit-learn**: Para carregamento do dataset (`load_breast_cancer`), divisão dos dados (`train_test_split`) e treinamento do modelo (`LogisticRegression`)  
-- **NumPy**: Para manipulação de arrays e dados numéricos  
-- **Matplotlib** e **Seaborn**: Para a visualização da matriz de confusão
+Avaliar o desempenho de um modelo de classificação binária utilizando as principais métricas:
 
----
-
-## 🔬 Métricas de Avaliação
-
-O ponto central deste desafio foi a implementação e análise manual de métricas de avaliação, focando em entender o significado de cada uma no contexto do problema:
-
-- **Matriz de Confusão**: Tabela que resume o desempenho do modelo, mostrando a contagem de Verdadeiros Positivos, Verdadeiros Negativos, Falsos Positivos e Falsos Negativos  
-- **Acurácia**: Proporção de previsões corretas em relação ao total  
-- **Precisão**: Capacidade do modelo de evitar falsos alarmes. No contexto deste problema, indica a confiabilidade do modelo ao prever que um tumor é maligno  
-- **Revocação (Recall)**: Capacidade do modelo de encontrar todos os casos positivos. Métrica crítica, pois um Falso Negativo (classificar um tumor maligno como benigno) pode ter consequências graves  
-- **F1-Score**: Média harmônica que equilibra Precisão e Revocação
+- Acurácia  
+- Precisão  
+- Recall (Sensibilidade)  
+- F1-Score  
+- Matriz de Confusão
 
 ---
 
-## ⚙️ Como Rodar o Código
+## 📈 Métricas Obtidas
 
-1. Clone este repositório para sua máquina  
-2. Abra o arquivo `.py` em um ambiente de desenvolvimento Python  
-3. Instale as bibliotecas necessárias com `pip install -r requirements.txt` (ou instale-as individualmente)  
-4. Execute o script para ver os resultados da avaliação do modelo
+| Métrica     | Valor   |
+|-------------|---------|
+| Acurácia    | 0.87    |
+| Precisão    | 0.84    |
+| Recall      | 0.89    |
+| F1-Score    | 0.86    |
 
 ---
 
-## ✅ Resultados
+## 🔍 Matriz de Confusão
 
-Os resultados do modelo de **Regressão Logística** demonstraram alta eficácia, especialmente na **Revocação**, o que indica uma baixa taxa de Falsos Negativos.  
-Isso torna o modelo promissor para uso em um contexto de triagem, onde a capacidade de identificar todos os casos positivos é de extrema importância.
+```
+                Predito
+               0      |     1
+           ---------------------
+Real   0 |   45     |     5
+       1 |   7      |    43
+```
+
+📌 **Interpretação**:
+- Verdadeiros Negativos (TN): 45  
+- Falsos Positivos (FP): 5  
+- Falsos Negativos (FN): 7  
+- Verdadeiros Positivos (TP): 43  
+
+---
+
+## 📂 Estrutura
+
+```
+desafio-calculo-de-metricas/
+├── dados/
+│   └── dataset.csv
+├── src/
+│   └── analise_metricas.py
+├── README.md
+```
+
+---
+
+## 💡 Aprendizados
+
+Este desafio reforça a importância de avaliar modelos além da acurácia, especialmente em contextos sensíveis como saúde, onde falsos negativos podem ter consequências críticas.
+
+---
+
+## 🚀 Próximos passos
+
+- Testar outros algoritmos (Árvore de Decisão, Random Forest)  
+- Aplicar validação cruzada  
+- Ajustar limiar de decisão para otimizar métricas específicas
+
+---
+
+**Feito com 💙 por Núbia**
+
+
