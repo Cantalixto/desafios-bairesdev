@@ -10,29 +10,29 @@ O foco do treinamento é o aprofundamento em **Machine Learning**, com ênfase e
 O bootcamp da BairesDev é voltado para profissionais que desejam entender e aplicar os fundamentos da **IA moderna**, com uma abordagem prática e acessível.  
 Durante a trilha, são explorados conceitos como:
 
-- 📚 **Desafios de Código**: exercícios para aplicar lógica, algoritmos e manipulação de dados com Python puro
-- 🤖 **Modelos de Aprendizado de Máquina**: incluindo redes neurais, Transfer Learning e LLMs
-- 🧠 **Estudo aplicado de IA**: com foco em visão computacional, classificação de imagens e binarização
-- 🛠️ **Projetos práticos**: voltados para reconhecimento facial, recomendação de imagens e assistentes virtuais
-
+- 📚 **Desafios de Código**: exercícios para aplicar lógica, algoritmos e manipulação de dados com Python puro  
+- 🤖 **Modelos de Aprendizado de Máquina**: incluindo redes neurais, Transfer Learning e LLMs  
+- 🧠 **Estudo aplicado de IA**: com foco em visão computacional, classificação de imagens e binarização  
+- 🛠️ **Projetos práticos**: voltados para reconhecimento facial, recomendação de imagens e assistentes virtuais  
 
 ---
 
 ## 📁 Desafios Realizados
 
-### 🔹 [Desafio Transfer Learning](./desafio-transfer-learning)
+### 🔹 [Desafio Transfer Learning](./desafio-transfer-learning)  
 Aplicação de redes neurais pré-treinadas para classificar imagens de gatos e cachorros.  
 Utiliza técnicas de fine-tuning e avaliação de desempenho com Python e frameworks de IA.
 
-### 🔹 [Desafio Binarização de Imagem](./binarizacao-imagem)
+### 🔹 [Desafio Binarização de Imagem](./binarizacao-imagem)  
 Conversão manual de uma imagem colorida para tons de cinza e posteriormente para preto e branco (binarização), utilizando apenas estruturas básicas do Python — sem bibliotecas de processamento de imagem.
 
+### 🔹 [Desafio Cálculo de Métricas](./desafio-calculo-de-métricas)  
+Avaliação de desempenho de modelos de classificação utilizando métricas como acurácia, precisão, recall, F1-score e matriz de confusão.  
+O projeto utiliza dados reais da área da saúde para análise de regressão logística com Python.
 
 ---
-
 
 ## 📌 Observações
 
 Este repositório será atualizado conforme novos desafios forem concluídos ao longo do bootcamp.  
 Fique à vontade para explorar os projetos, sugerir melhorias ou acompanhar minha evolução!
-
