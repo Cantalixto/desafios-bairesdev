@@ -71,8 +71,6 @@ Este desafio reforça a importância de avaliar modelos além da acurácia, espe
 - Aplicar validação cruzada  
 - Ajustar limiar de decisão para otimizar métricas específicas
 
+
 ---
-
-**Feito com 💙 por Núbia**
-
 
