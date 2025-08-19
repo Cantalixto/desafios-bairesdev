@@ -26,7 +26,7 @@ Utiliza técnicas de fine-tuning e avaliação de desempenho com Python e framew
 ### 🔹 [Desafio Binarização de Imagem](./binarizacao-imagem)  
 Conversão manual de uma imagem colorida para tons de cinza e posteriormente para preto e branco (binarização), utilizando apenas estruturas básicas do Python — sem bibliotecas de processamento de imagem.
 
-### 🔹 [Desafio Cálculo de Métricas](./desafio-calculo-de-métricas)  
+### 🔹 [Desafio Cálculo de Métricas](./desafio-calculo-de-metricas)  
 Avaliação de desempenho de modelos de classificação utilizando métricas como acurácia, precisão, recall, F1-score e matriz de confusão.  
 O projeto utiliza dados reais da área da saúde para análise de regressão logística com Python.
 
