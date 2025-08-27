@@ -1,4 +1,4 @@
-# 🧠 Desafio Transfer Learning – Classificação de Imagens
+# 🧠 Desafio de projeto: Treinamento de redes neurais com transfer learning 
 
 Este projeto foi desenvolvido como parte do bootcamp da **BairesDev** na plataforma [DIO.me](https://www.dio.me/), voltado para o estudo prático de **Machine Learning**, **Inteligência Artificial** e **Modelos de Linguagem (LLMs)**.
 
