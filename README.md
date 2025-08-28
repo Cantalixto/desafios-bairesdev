@@ -19,16 +19,19 @@ Durante a trilha, são explorados conceitos como:
 
 ## 📁 Desafios Realizados
 
-### 🔹 [Desafio Transfer Learning](./desafio-transfer-learning)  
+### 🔹 [Desafio de Projeto: Treinamento de Redes Neurais com Transfer Learning](./desafio-transfer-learning)  
 Aplicação de redes neurais pré-treinadas para classificar imagens de gatos e cachorros.  
 Utiliza técnicas de fine-tuning e avaliação de desempenho com Python e frameworks de IA.
 
-### 🔹 [Desafio Binarização de Imagem](./binarizacao-imagem)  
+### 🔹 [Desafio de Projeto: Redução de Dimensionalidade em Imagens para Redes Neurais](./binarizacao-imagem)  
 Conversão manual de uma imagem colorida para tons de cinza e posteriormente para preto e branco (binarização), utilizando apenas estruturas básicas do Python — sem bibliotecas de processamento de imagem.
 
-### 🔹 [Desafio Cálculo de Métricas](./desafio-calculo-de-metricas)  
+### 🔹 [Desafio de Projeto: Cálculo de Métricas de Avaliação de Desempenho](./desafio-calculo-de-metricas)  
 Avaliação de desempenho de modelos de classificação utilizando métricas como acurácia, precisão, recall, F1-score e matriz de confusão.  
 O projeto utiliza dados reais da área da saúde para análise de regressão logística com Python.
+
+### 🔹 [Desafio de Projeto: Criação de uma base de dados e treinamento na rede (YOLO)](./criacao-dataset-e-treinamento-yolo)
+Criação de um pipeline completo de Visão Computacional, com anotação e aumento de dados, treinamento de um modelo YOLOv8 para detecção de leitos e monitores hospitalares, e análise de métricas de desempenho.
 
 ---
 
