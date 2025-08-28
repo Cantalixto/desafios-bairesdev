@@ -39,3 +39,17 @@ Criação de um pipeline completo de Visão Computacional, com anotação e aume
 
 Este repositório será atualizado conforme novos desafios forem concluídos ao longo do bootcamp.  
 Fique à vontade para explorar os projetos, sugerir melhorias ou acompanhar minha evolução!
+
+---
+
+## ❤️ Como Contribuir ou Apoiar
+
+Se este repositório foi útil para você, considere dar uma **estrela** ⭐️ no canto superior direito para me apoiar. Isso me motiva a continuar criando conteúdo e projetos de qualidade.
+
+Se você deseja usar este projeto como base para o seu próprio trabalho ou propor melhorias, sinta-se à vontade para dar um **fork** no repositório.
+
+1. **Faça o Fork**: Clique no botão "Fork" no canto superior direito desta página.
+2. **Clone o Repositório**: Clone o seu fork para sua máquina local.
+3. **Faça suas Alterações**: Crie uma nova branch, faça suas alterações e suba o código.
+4. **Abra um Pull Request**: Envie um Pull Request para que suas alterações possam ser revisadas e, se aprovadas, mescladas ao projeto original.
+  
