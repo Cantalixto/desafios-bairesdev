@@ -1,6 +1,6 @@
 # Detecção de Objetos: Leitos Hospitalares e Monitores
 
-Este projeto foi desenvolvido como parte do *Desafio de Projeto: Criação de uma Base de Dados e Treinamento da Rede YOLO*, do curso de Machine Learning da BairesDev na DIO.me. O objetivo principal era rotular uma base de dadose aplicar o treinamento com a rede YOLO.
+Este projeto foi desenvolvido como parte do *Desafio de Projeto: Criação de uma Base de Dados e Treinamento da Rede YOLO*, do curso de Machine Learning da BairesDev na DIO.me. O objetivo principal era rotular uma base de dados e aplicar o treinamento com a rede YOLO.
 
 ---
 
@@ -51,9 +51,12 @@ https://app.roboflow.com/leito-hospitalar/leito-hospitalar-d7f3j/5
 
 ## 📁 Estrutura do Projeto
 
-* notebook.ipynb: O notebook do Google Colab com todo o código-fonte para o treinamento e a predição.
-* best.pt: O modelo treinado, pronto para ser utilizado em novas imagens ou em outras aplicações.
-* /runs/detect/predict: Pasta contendo as imagens com as predições do modelo.
+* `detecco_leito_hospitalar.py`: O notebook do Google Colab com todo o código-fonte para o treinamento e a predição.
+* `best.pt`: O modelo treinado, pronto para ser utilizado em novas imagens ou em outras aplicações.
+* `teste/`: A pasta com 5 imagens para teste do modelo.
+
+### Resultados da Predição
+Os resultados das predições, com as caixas de detecção desenhadas, são salvos automaticamente na pasta `/runs/detect/predict` após a execução do comando de predição no Google Colab.
 
 ---
 
@@ -69,15 +72,26 @@ Siga os passos abaixo para rodar este projeto no seu próprio ambiente do Google
     ```
 4.  **Descompacte o Dataset**:
     ```bash
-    !unzip [nome_do_seu_dataset].zip
+    !unzip leito-hospitalar.v5i.yolov8.zip
     ```
-5.  **Treine o Modelo**:
-    ```bash
-    !yolo task=detect mode=train model=yolov8n.pt data=[nome_da_pasta_do_dataset]/data.yaml epochs=50 imgsz=640
+5.  **Modifique o Arquivo `data.yaml`**:
+    Para que o treinamento funcione corretamente, você deve modificar o arquivo `data.yaml` que foi descompactado. Abra o arquivo e substitua o conteúdo pelo seguinte:
+    
+    ```yaml
+    train: train/images
+    val: train/images
+    
+    nc: 4
+    names: ['leito-hospitalar-desocupado', 'leito-hospitalar-ocupado', 'monitor-multiparametros-desligado', 'monitor-multiparametros-ligado']
     ```
-6.  **Faça a Predição**:
+
+6.  **Treine o Modelo**:
     ```bash
-    !yolo task=detect mode=predict model=runs/detect/[nome_da_pasta_do_treinamento]/weights/best.pt source=[caminho_da_pasta_de_teste]
+    !yolo task=detect mode=train model=yolov8n.pt data=leito-hospitalar.v5i.yolov8/data.yaml epochs=50 imgsz=640
+    ```
+7.  **Faça a Predição**:
+    ```bash
+    !yolo task=detect mode=predict model=runs/detect/training_run_1/weights/best.pt source=teste/
     ```
 
 ---    
