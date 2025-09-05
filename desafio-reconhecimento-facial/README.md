@@ -15,6 +15,7 @@ Reconhecer os rostos de **Elon Musk**, **Sam Altman** e **Lidiane Jones** em uma
 - `faces_db/`: pasta contendo imagens de referência para cada pessoa (ex: `sam1.png`, `elon2.png`, `lidiane3.png`)
 - `test_1/test_1.png`: imagem de teste contendo múltiplos rostos
 - `desafio_reconhecimento_facial.ipynb`: notebook principal desenvolvido no Google Colab
+- `results/resultado_test_1.png`: imagem de teste com o resultado do reconhecimento facial
 
 ---
 
@@ -51,6 +52,8 @@ A imagem de teste é processada e os rostos são identificados com caixas verdes
 - **SAM ALTMAN**  
 - **ELON MUSK**  
 - **LIDIANE JONES**
+  
+![Resultado do reconhecimento facial](results/resultado_test_1.png)
 
 ---
 
@@ -74,3 +77,19 @@ A imagem de teste é processada e os rostos são identificados com caixas verdes
 - Manipulação de imagens e embeddings faciais
 - Integração de múltiplas bibliotecas para visão computacional
 - Organização de dados e visualização de resultados em notebooks interativos
+
+---
+
+## 🌟 Apoie este Projeto
+
+Se você gostou deste projeto, aprendeu algo novo ou acredita que ele pode ajudar outras pessoas, considere deixar uma **estrela ⭐ no repositório**!
+
+Isso ajuda a dar visibilidade ao trabalho, incentiva a continuidade de projetos como este e mostra que a comunidade valoriza iniciativas de aprendizado e compartilhamento.
+
+Sinta-se à vontade para:
+
+- Compartilhar com colegas e amigos que estão estudando Machine Learning
+- Abrir issues com sugestões, dúvidas ou melhorias
+- Contribuir com novas funcionalidades ou ajustes no código
+
+Obrigado por apoiar! 💙
