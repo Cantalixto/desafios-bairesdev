@@ -1,4 +1,4 @@
-# 🧠 Desafio: Reconhecimento Facial com Transfer Learning
+# 🧠 Desafio de Projeto: Reconhecimento Facial com Transfer Learning
 
 Este projeto faz parte do **Bootcamp Machine Learning da BairesDev** promovido pela **DIO.me**, e tem como objetivo aplicar técnicas de **Transfer Learning** para realizar o **reconhecimento facial de múltiplos rostos em uma única imagem**, utilizando modelos de deep learning pré-treinados.
 
@@ -12,10 +12,18 @@ Reconhecer os rostos de **Elon Musk**, **Sam Altman** e **Lidiane Jones** em uma
 
 ## 🗂️ Estrutura do Projeto
 
-- `faces_db/`: pasta contendo imagens de referência para cada pessoa (ex: `sam1.png`, `elon2.png`, `lidiane3.png`)
-- `test_1/test_1.png`: imagem de teste contendo múltiplos rostos
-- `desafio_reconhecimento_facial.ipynb`: notebook principal desenvolvido no Google Colab
-- `results/resultado_test_1.png`: imagem de teste com o resultado do reconhecimento facial
+```bash
+desafio-reconhecimento-facial/
+├── faces_db/
+│   ├── elon_musk/
+│   ├── lidiane_jones/
+│   └── sam_altman/
+├── test_1/
+│   └── test_1.png
+├── results/
+│   └── resultado_test_1.png
+└── desafio_reconhecimento_facial.ipynb
+```
 
 ---
 
@@ -57,17 +65,31 @@ A imagem de teste é processada e os rostos são identificados com caixas verdes
 
 ---
 
-## 🚀 Como Executar
+## ▶️ Como Usar o Projeto
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/Cantalixto/desafios-bairesdev.git
-2. Acesse a pasta do projeto:
-   ```bash
-   cd desafios-bairesdev/desafio-reconhecimento-facial
-3. Abra o notebook desafio_reconhecimento_facial.ipynb no Google Colab
-4. Certifique-se de montar o Google Drive e ajustar os caminhos para os dados
-5. Execute todas as células para visualizar os resultados
+### Passo 1: Clone o Repositório
+
+Para obter o código do projeto, use o comando `git clone` no seu terminal:
+
+```bash
+git clone [https://github.com/Cantalixto/desafios-bairesdev.git](https://github.com/Cantalixto/desafios-bairesdev.git)
+```
+
+Em seguida, navegue até a pasta específica do projeto:
+
+```bash
+  cd desafios-bairesdev/desafio-reconhecimento-facial
+```
+
+### Passo 2: Execute o Notebook no Google Colab
+
+1. Abra o arquivo `desafio_reconhecimento_facial.ipynb` no Google Colab.
+
+2. Certifique-se de que o tipo de ambiente de execução está configurado para usar uma GPU.
+
+3. Execute todas as células do notebook para visualizar os resultados.
+
+4. Certifique-se de montar seu Google Drive e ajustar os caminhos para as pastas de dados (`faces_db/` e `test_1/`) no código, conforme necessário.
 
 ---
 
@@ -80,16 +102,15 @@ A imagem de teste é processada e os rostos são identificados com caixas verdes
 
 ---
 
-## 🌟 Apoie este Projeto
+## ❤️ Como Contribuir ou Apoiar
 
-Se você gostou deste projeto, aprendeu algo novo ou acredita que ele pode ajudar outras pessoas, considere deixar uma **estrela ⭐ no repositório**!
+Se este repositório foi útil para você, considere dar uma estrela ⭐️ no canto superior direito para me apoiar. Isso me motiva a continuar criando conteúdo e projetos de qualidade.
 
-Isso ajuda a dar visibilidade ao trabalho, incentiva a continuidade de projetos como este e mostra que a comunidade valoriza iniciativas de aprendizado e compartilhamento.
+Se você deseja usar este projeto como base para o seu próprio trabalho ou propor melhorias, sinta-se à vontade para dar um fork no repositório.
 
-Sinta-se à vontade para:
+1. Faça o Fork: Clique no botão "Fork" no canto superior direito desta página.
+2. Clone o Repositório: Clone o seu fork para sua máquina local.
+3. Faça suas Alterações: Crie uma nova branch, faça suas alterações e suba o código.
+4. Abra um Pull Request: Envie um Pull Request para que suas alterações possam ser revisadas e, se aprovadas, mescladas ao projeto original.
 
-- Compartilhar com colegas e amigos que estão estudando Machine Learning
-- Abrir issues com sugestões, dúvidas ou melhorias
-- Contribuir com novas funcionalidades ou ajustes no código
-
-Obrigado por apoiar! 💙
+---
