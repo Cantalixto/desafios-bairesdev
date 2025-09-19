@@ -33,12 +33,20 @@ O projeto utiliza dados reais da área da saúde para análise de regressão log
 ### 🔹 [Desafio de Projeto: Criação de uma base de dados e treinamento na rede (YOLO)](./criacao-dataset-e-treinamento-yolo)
 Criação de um pipeline completo de Visão Computacional, com anotação e aumento de dados, treinamento de um modelo YOLOv8 para detecção de leitos e monitores hospitalares, e análise de métricas de desempenho.
 
----
+### 🔹 [Desafio de Projeto: Reconhecimento Facial com Transfer Learning](./desafio-reconhecimento-facial)
+Utiliza redes neurais pré-treinadas para realizar o reconhecimento facial de celebridades, aplicando técnicas de aprendizado por transferência (Transfer Learning) e processamento de imagem.
 
-## 📌 Observações
+### 🔹 [Desafio de Projeto: Sistema de Recomendação por Imagens Digitais](./sistema-recomendacao-imagens)
+Implementação de um sistema de recomendação que sugere imagens similares com base em uma imagem de entrada, utilizando recursos de redes neurais para extração de características visuais.
 
-Este repositório será atualizado conforme novos desafios forem concluídos ao longo do bootcamp.  
-Fique à vontade para explorar os projetos, sugerir melhorias ou acompanhar minha evolução!
+### 🔹 [Desafio de Projeto: Assistente Virtual com Reconhecimento de Voz e Resposta em Áudio](./sistema-assistente-virtual)
+Construção de um assistente virtual capaz de entender comandos de voz e responder em áudio, demonstrando a aplicação de modelos de linguagem e tecnologias de reconhecimento de fala.
+
+### 🔹 [Desafio de Projeto: Agente para Detecção de Vulnerabilidades em Arquiteturas](./agente-deteccao-vulnerabilidades)
+Desenvolvimento de um agente de IA focado na análise de vulnerabilidades em diagramas de arquitetura, aplicando modelos de linguagem para identificar e sugerir correções de segurança.
+
+### 🔹 [Desafio de Projeto: Agente de IA para Geração de Testes Unitários com OpenAI e Pytest](./agente-teste-langchain-azure)
+Criação de um agente de software que utiliza a API da OpenAI e técnicas de Prompt Engineering para gerar testes unitários automaticamente para funções em Python.
 
 ---
 
