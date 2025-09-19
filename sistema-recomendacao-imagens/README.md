@@ -1,17 +1,19 @@
-# Sistema de Recomendação por Imagens Digitais
+# 💡 Desafio de Projeto: Sistema de Recomendação por Imagens Digitais
 
-## Objetivo
-
-Este projeto tem como objetivo desenvolver um sistema de recomendação visual utilizando deep learning. A proposta envolve:
-
-- Treinar uma rede neural com **4 classes de objetos**: `camiseta`, `sapato`, `relógio`, `bolsa`
-- Utilizar **transfer learning** com EfficientNetB0
-- Implementar recomendação por **similaridade visual** com base na classe prevista
-- Permitir que o usuário envie uma imagem externa e receba sugestões visuais semelhantes
+Este projeto tem como objetivo desenvolver um sistema de recomendação visual utilizando deep learning. A proposta envolve o treinamento de uma rede neural para classificar imagens e a implementação de um sistema de recomendação por similaridade visual.
 
 ---
 
-## Tecnologias utilizadas
+## 🎯 Objetivo
+
+- Treinar uma rede neural com **4 classes de objetos**: `camiseta`, `sapato`, `relógio`, `bolsa`.
+- Utilizar **transfer learning** com o modelo `EfficientNetB0`.
+- Implementar recomendação por **similaridade visual** com base na classe prevista.
+- Permitir que o usuário envie uma imagem externa e receba sugestões visuais semelhantes.
+
+---
+
+## ⚙️ Tecnologias Utilizadas
 
 - Python 3
 - TensorFlow / Keras
@@ -22,7 +24,19 @@ Este projeto tem como objetivo desenvolver um sistema de recomendação visual u
 
 ---
 
-## Etapas do projeto
+## 📁 Estrutura do Projeto
+
+```bash
+sistema-recomendacao-imagens/
+├── camiseta/
+├── sapato/
+├── relogio/
+├── bolsa/
+├── sistema_recomendacao.ipynb
+└── README.md
+```
+
+## 📄 Etapas do Projeto
 
 1. **Organização do dataset**  
    Imagens separadas por categoria em pastas específicas.
@@ -41,71 +55,68 @@ Este projeto tem como objetivo desenvolver um sistema de recomendação visual u
 
 ---
 
-##  Como rodar o projeto
+## ▶️ Como Executar o Projeto
 
-Este projeto foi desenvolvido e testado no Google Colab.
+Este projeto foi desenvolvido e testado no Google Colab. Siga os passos abaixo para executá-lo:
 
-1. Clone o repositório ou copie os arquivos para o Colab
-   
-2. Envie imagens para cada categoria
-```python
-upload_to("camiseta")
-upload_to("sapato")
-upload_to("relogio")
-upload_to("bolsa")
-```
+### Passo 1: Configure o Ambiente
 
-3. Aplique data augmentation
-```python
-for cat in ["camiseta", "sapato", "relogio", "bolsa"]:
-    augment_images(cat, n_aug=5)
-```
+1.  Clone este repositório para o seu ambiente local ou copie os arquivos para o Google Colab.
+2.  Instale as dependências necessárias com o `pip` (se estiver fora do Colab):
 
-4. Extraia os embeddings das imagens aumentadas
-O sistema irá gerar os arquivos embeddings.npy e image_paths.json
-Esses arquivos serão usados para calcular similaridade visual
+    ```bash
+    pip install tensorflow scikit-learn matplotlib Pillow
+    ```
+3.  Abra o notebook `sistema_recomendacao.ipynb` no Google Colab.
 
-5. Treine o modelo de classificação
-```
-history = model.fit(train_gen, validation_data=val_gen, epochs=10)
-```
+### Passo 2: Prepare o Dataset
 
----
+1.  Faça o upload de suas imagens para cada uma das categorias no Colab, usando o código `from google.colab import files` conforme indicado no notebook.
 
-## Teste com imagem externa
+2.  Aplique a técnica de data augmentation para gerar imagens aumentadas.
 
-1. Faça upload da imagem para o Colab:
-```
-from google.colab import files
-uploaded = files.upload()
-```
+### Passo 3: Treine o Modelo e Gere o Sistema de Recomendação
 
-2. Classifique a imagem:
-```
-classify_image("nome_da_imagem.jpeg")
-```
+1.  Execute as células do notebook para extrair os embeddings das imagens. O sistema irá gerar os arquivos `embeddings.npy` e `image_paths.json`.
 
-3. Recomende imagens semelhantes dentro da mesma classe:
-```
-recommend_by_class_and_similarity("nome_da_imagem.jpeg")
-```
+2.  Treine o modelo de classificação com o comando:
+    ```python
+    history = model.fit(train_gen, validation_data=val_gen, epochs=10)
+    ```
 
 ---
 
-## Resultados esperados
-- A imagem enviada será classificada em uma das 4 categorias.
+### Passo 4: Teste com uma Imagem Externa
+
+1.  Faça o upload de uma imagem externa que você queira testar.
+2.  Use a função `classify_image()` para classificar a imagem na rede:
+    ```python
+    classify_image("nome_da_imagem.jpeg")
+    ```
+3.  Use a função `recommend_by_class_and_similarity()` para obter as recomendações:
+    ```python
+    recommend_by_class_and_similarity("nome_da_imagem.jpeg")
+    ```
+
+---
+
+## 📋 Resultados Esperados
+
+- A imagem enviada será classificada em uma das 4 categorias (`camiseta`, `sapato`, `relógio`, `bolsa`).
 - O sistema retornará as imagens mais semelhantes visualmente dentro da mesma classe prevista.
 
 ---
 
-## Observações
-- As imagens originais e aumentadas não estão incluídas no repositório.
-O usuário deve fazer o upload manualmente no Colab usando a função upload_to("categoria").
-- O projeto foi desenvolvido para fins acadêmicos e pode ser adaptado para outros domínios visuais.
+## ❤️ Como Contribuir ou Apoiar
 
+Se este repositório foi útil para você, considere dar uma **estrela** ⭐️ no canto superior direito para me apoiar. Isso me motiva a continuar criando conteúdo e projetos de qualidade.
 
+Se você deseja usar este projeto como base para o seu próprio trabalho ou propor melhorias, sinta-se à vontade para dar um **fork** no repositório.
 
-
+1. **Faça o Fork**: Clique no botão "Fork" no canto superior direito desta página.
+2. **Clone o Repositório**: Clone o seu fork para sua máquina local.
+3. **Faça suas Alterações**: Crie uma nova branch, faça suas alterações e suba o código.
+4. **Abra um Pull Request**: Envie um Pull Request para que suas alterações possam ser revisadas e, se aprovadas, mescladas ao projeto original.
 
 
 
