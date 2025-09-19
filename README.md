@@ -30,7 +30,7 @@ Conversão manual de uma imagem colorida para tons de cinza e posteriormente par
 Avaliação de desempenho de modelos de classificação utilizando métricas como acurácia, precisão, recall, F1-score e matriz de confusão.  
 O projeto utiliza dados reais da área da saúde para análise de regressão logística com Python.
 
-### 🔹 [Desafio de Projeto: Criação de uma base de dados e treinamento na rede (YOLO)](./criacao-dataset-e-treinamento-yolo)
+### 🔹 [Desafio de Projeto: Criação de uma base de dados e treinamento na rede (YOLO)](./deteccao-e-treinamento-yolo)
 Criação de um pipeline completo de Visão Computacional, com anotação e aumento de dados, treinamento de um modelo YOLOv8 para detecção de leitos e monitores hospitalares, e análise de métricas de desempenho.
 
 ### 🔹 [Desafio de Projeto: Reconhecimento Facial com Transfer Learning](./desafio-reconhecimento-facial)
