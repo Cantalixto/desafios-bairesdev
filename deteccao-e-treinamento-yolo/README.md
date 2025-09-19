@@ -1,10 +1,6 @@
-# Detecção de Objetos: Leitos Hospitalares e Monitores
+# 🤖 Desafio de Projeto: Criação de uma base de dados e treinamento na rede (YOLO)
 
-Este projeto foi desenvolvido como parte do *Desafio de Projeto: Criação de uma Base de Dados e Treinamento da Rede YOLO*, do curso de Machine Learning da BairesDev na DIO.me. O objetivo principal era rotular uma base de dados e aplicar o treinamento com a rede YOLO.
-
----
-
-Este projeto utiliza o modelo *YOLOv8* para detectar e identificar o status de leitos hospitalares (ocupado/desocupado) e monitores multiparâmetros (ligado/desligado) em imagens. O objetivo é criar uma solução automatizada para monitoramento de ambientes hospitalares, melhorando a gestão de recursos e a eficiência operacional.
+Este projeto foi desenvolvido como parte do curso de Machine Learning da **BairesDev** na plataforma [DIO.me](https://www.dio.me/). O objetivo principal era criar uma solução automatizada para o monitoramento de ambientes hospitalares, utilizando o modelo YOLOv8 para detectar e identificar o status de leitos e monitores multiparâmetros em imagens.
 
 ---
 
@@ -33,6 +29,20 @@ As previsões do modelo em novas imagens podem ser vistas na pasta /runs/detect/
 
 ---
 
+## 📁 Estrutura do Projeto
+
+```bash
+├── deteccao_leito_hospitalar.ipynb
+├── best.pt
+├── teste/
+│   ├── image_1.jpg
+│   ├── image_2.jpg
+│   └── ...
+└── README.md
+```
+
+---
+
 ## 💾 Dataset
 O dataset completo utilizado neste projeto é público e está disponível no Roboflow. Ele inclui as imagens originais, já devidamente rotuladas com as caixas de anotação (bounding boxes) e as classes correspondentes.
 
@@ -49,18 +59,9 @@ https://app.roboflow.com/leito-hospitalar/leito-hospitalar-d7f3j/5
 * *Roboflow*: Plataforma usada para gerenciar o dataset e realizar anotações e aumento de dados.
 * *Google Colab*: Ambiente de desenvolvimento para o treinamento do modelo em GPU.
 
-## 📁 Estrutura do Projeto
-
-* `detecco_leito_hospitalar.py`: O notebook do Google Colab com todo o código-fonte para o treinamento e a predição.
-* `best.pt`: O modelo treinado, pronto para ser utilizado em novas imagens ou em outras aplicações.
-* `teste/`: A pasta com 5 imagens para teste do modelo.
-
-### Resultados da Predição
-Os resultados das predições, com as caixas de detecção desenhadas, são salvos automaticamente na pasta `/runs/detect/predict` após a execução do comando de predição no Google Colab.
-
 ---
 
-## 💻 Como Usar o Projeto
+## ▶️ Como Executar o Projeto
 
 Siga os passos abaixo para rodar este projeto no seu próprio ambiente do Google Colab.
 
@@ -106,3 +107,5 @@ Se você deseja usar este projeto como base para o seu próprio trabalho ou prop
 2.  **Clone o Repositório**: Clone o seu fork para sua máquina local.
 3.  **Faça suas Alterações**: Crie uma nova branch, faça suas alterações e suba o código.
 4.  **Abra um Pull Request**: Envie um Pull Request para que suas alterações possam ser revisadas e, se aprovadas, mescladas ao projeto original.
+
+---
